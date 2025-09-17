@@ -1,0 +1,21 @@
+[gd_scene load_steps=5 format=3 uid="uid://8e008pogovvl"]
+
+[ext_resource type="Script" uid="uid://ct5id3t7x0wsn" path="res://Card.cs" id="1_a14kf"]
+[ext_resource type="Texture2D" uid="uid://22r2a1qevesm" path="res://deck_atlas_texture.tres" id="2_i2ht8"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rjlel"]
+atlas = ExtResource("2_i2ht8")
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_q5obu"]
+atlas = SubResource("AtlasTexture_rjlel")
+region = Rect2(18, 0, 18, 22)
+
+[node name="Card" type="Node2D"]
+script = ExtResource("1_a14kf")
+
+[node name="CardArt" type="TextureRect" parent="."]
+texture_filter = 1
+offset_right = 18.0
+offset_bottom = 22.0
+scale = Vector2(4, 4)
+texture = SubResource("AtlasTexture_q5obu")

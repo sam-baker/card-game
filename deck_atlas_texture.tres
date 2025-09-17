@@ -1,0 +1,7 @@
+[gd_resource type="AtlasTexture" load_steps=2 format=3 uid="uid://22r2a1qevesm"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_p5rm5"]
+load_path = "res://.godot/imported/poker nano.png-162ddd1dee373cdb58892e5f502ae4cb.ctex"
+
+[resource]
+atlas = SubResource("CompressedTexture2D_p5rm5")

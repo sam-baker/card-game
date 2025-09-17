@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=2 format=3 uid="uid://boq4ixk33tg72"]
+
+[ext_resource type="Script" uid="uid://cpkyvpvuvic7" path="res://CardResource.cs" id="1_hyr8d"]
+
+[resource]
+script = ExtResource("1_hyr8d")
+Suit = 0
+Rank = 0
+AtlasCoords = Vector2i(0, 0)
+metadata/_custom_type_script = "uid://cpkyvpvuvic7"

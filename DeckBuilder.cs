@@ -35,6 +35,9 @@ public partial class DeckBuilder : Node
 				card.Suit = suit;
 				card.Rank = rank;
 				card.AtlasCoords = new Vector2I((int)rank, (int)suit);
+				//card.AtlasCoords = new Vector2I(4,10);
+				//TODO make this not a constant later 4,10 is the card back
+				card.BackAtlasCoords = new Vector2I(10, 4);
 				//deckArray[3].AtlasCoords = new Vector2I((int)deckArray[3].Rank, (int)deckArray[3].Suit);
 				newDeck.Add(card);
 			}
@@ -42,5 +45,12 @@ public partial class DeckBuilder : Node
 		if (shuffle) newDeck.Shuffle();
 
 		return newDeck;
+	}
+
+	public Godot.Collections.Array createExtras()
+	{
+		Godot.Collections.Array extras = new Godot.Collections.Array();
+		//var card
+		return extras;
 	}
 }

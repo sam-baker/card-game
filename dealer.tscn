@@ -1,6 +1,8 @@
-[gd_scene load_steps=2 format=3 uid="uid://dwck1i5xn2nqv"]
+[gd_scene load_steps=3 format=3 uid="uid://dwck1i5xn2nqv"]
 
 [ext_resource type="Script" uid="uid://bnkq7bfv20q27" path="res://Dealer.cs" id="1_m5jkw"]
+[ext_resource type="PackedScene" uid="uid://cibwon1u7vfi7" path="res://card.tscn" id="2_46f5c"]
 
 [node name="Dealer" type="Node"]
 script = ExtResource("1_m5jkw")
+CardScene = ExtResource("2_46f5c")

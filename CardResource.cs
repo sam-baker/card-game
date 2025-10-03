@@ -1,3 +1,4 @@
+using System.Numerics;
 using Godot;
 
 [GlobalClass]
@@ -27,11 +28,32 @@ public partial class CardResource : Resource
 		Queen = 11,
 		King = 12
 	}
+
+	public enum CardExtras
+	{
+		BackOne,
+		BackTwo,
+		BackMany,
+	}
 	[Export]
 	public CardSuit Suit { get; set; }
 	[Export]
 	public CardRank Rank { get; set; }
 	[Export]
+	public CardExtras Back { get; set; }
+	private bool _faceUp = true;
+	public bool faceUp
+	{
+		get { return _faceUp; }
+		set
+		{
+			_faceUp = value;
+			//if (_faceUp == false){}
+			}
+	}
+
+	[Export]
+	public Vector2I BackAtlasCoords { get; set; }
 	public Vector2I AtlasCoords { get; set; }
 	// [Export]
 	// public int cardWidth = 18;

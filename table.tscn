@@ -1,14 +1,13 @@
 [gd_scene load_steps=5 format=3 uid="uid://cyt1yf2mifrj3"]
 
 [ext_resource type="Script" uid="uid://uhl7buiaejrd" path="res://Table.cs" id="1_jd0nb"]
-[ext_resource type="PackedScene" uid="uid://cibwon1u7vfi7" path="res://card.tscn" id="2_vjl2i"]
 [ext_resource type="PackedScene" uid="uid://dwck1i5xn2nqv" path="res://dealer.tscn" id="3_kl0hw"]
+[ext_resource type="PackedScene" uid="uid://dsf4lejywcj3r" path="res://DiscardPile.tscn" id="3_vjl2i"]
 
 [sub_resource type="Theme" id="Theme_vjl2i"]
 
 [node name="Table" type="Node2D"]
 script = ExtResource("1_jd0nb")
-CardScene = ExtResource("2_vjl2i")
 
 [node name="Control" type="Control" parent="."]
 layout_mode = 3
@@ -73,3 +72,11 @@ size_flags_vertical = 6
 theme = SubResource("Theme_vjl2i")
 
 [node name="Dealer" parent="." instance=ExtResource("3_kl0hw")]
+
+[node name="Dicard Pile" parent="." instance=ExtResource("3_vjl2i")]
+
+[node name="Discard" type="GridContainer" parent="."]
+offset_left = 379.0
+offset_top = 205.0
+offset_right = 702.0
+offset_bottom = 374.0
